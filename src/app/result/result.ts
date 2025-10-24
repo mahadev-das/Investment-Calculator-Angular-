@@ -14,13 +14,17 @@ export class Result implements OnChanges{
   @Input() duration: number = 0;
   years: number[] = []
 
+  resultsData:[{year:number,investmentValue:number, interest:number, totalinterest:number,investmentcapital:number}]=[]
+
   ngOnChanges(changes: SimpleChanges) {
     if (changes['duration']) {
       this.years = [];
       for (let i = 1; i <= this.duration; i++) {
         this.years.push(i);
-        const interest=(this.initialInvestment*this.expectedReturn)/100;
-        let investmentValue=this.initialInvestment + 
+        
+        let investmentValue=this.initialInvestment +(this.anualInvestment*i)+ (this.initialInvestment+(this.anualInvestment*i)*this.expectedReturn/100)
+        const interest=(investmentValue*this.expectedReturn)/100;
+        const totalInterest=interest
       }
       
       
