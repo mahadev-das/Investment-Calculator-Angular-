@@ -1,0 +1,31 @@
+.table-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+table{
+    border: 1px solid rgb(110, 110, 100);
+    text-align: center;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 209);
+}
+
+
+table th{
+    background-color: rgb(0, 61, 41);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+tr td{
+    background-color: rgba(215, 8, 63, 0.698);
+    border-radius: 4px;
+}

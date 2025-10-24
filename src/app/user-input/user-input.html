@@ -1,0 +1,27 @@
+<div class="userinput-container">
+  <form action="" (ngSubmit)="onSubmit()">
+    <div class="child-container1">
+      <p>
+        <label for="">Initial Investment</label>
+        <input type="text" placeholder="Initial Investment" name="InitialInvestment" [(ngModel)]="InitialInvestment"/>
+      </p>
+
+      <p>
+        <label for="">Anual Investment</label>
+        <input type="text" placeholder="Initial Investment" name="AnualInvestment" [(ngModel)]="AnualInvestment"/>
+      </p>
+    </div>
+    <div class="child-container2">
+      <p>
+        <label for="">Expected Return </label>
+        <input type="text" placeholder="Initial Investment" name="ExpectedReturn" [(ngModel)]="ExpectedReturn"/>
+      </p>
+
+      <p>
+        <label for="">Duration</label>
+        <input type="text" placeholder="Initial Investment" name="Duration" [(ngModel)]="Duration"/>
+      </p>
+    </div>
+    <button type="submit">Calculate</button>
+  </form>
+</div>

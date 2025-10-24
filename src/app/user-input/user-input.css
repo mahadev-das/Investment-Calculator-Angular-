@@ -1,0 +1,55 @@
+.userinput-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    background-color: rgb(255, 100, 10);
+    margin: auto;
+    padding: 2vh 3vw;
+    border-radius: 9px;
+}
+
+.child-container1{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5vw ;
+}
+.child-container2{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5vw;
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 600;
+}
+
+label{
+    padding: 0 0 1px 4px;
+}
+
+form{
+    padding: 5px;
+}
+button{
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
