@@ -8,13 +8,13 @@
       <th>Total Interest</th>
       <th>Invested Capital</th>
     </tr>
-    @for(year of years; track $index){
+    @for(resultsData of resultsDatas; track $index){
     <tr>
-      <td>{{ year }}</td>
-      <td>{{ }}</td>
-      <td>{{ }}</td>
-      <td>{{ }}</td>
-      <td>{{ }}</td>
+      <td>{{ resultsData.year }}</td>
+      <td>{{resultsData.investmentValue |currency:'INR' }}</td>
+      <td>{{resultsData.interest|currency:'INR'}}</td>
+      <td>{{ resultsData.totalinterest|currency:'INR'}}</td>
+      <td>{{resultsData.investmentcapital|currency:'INR'}}</td>
     </tr>
     }
   </table>

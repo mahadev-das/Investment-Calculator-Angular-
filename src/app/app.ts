@@ -5,7 +5,7 @@ import { Result } from './result/result';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, UserInput, Result],
+ standalone:false,
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
@@ -25,10 +25,6 @@ export class App {
     this.AnualInvestment=datas.AnualInvestment;
     this.ExpectedReturn=datas.ExpectedReturn;
     this.Duration=datas.Duration;
-    console.log(this.InitialInvestment);
-    console.log(this.AnualInvestment);
-    console.log(this.ExpectedReturn);
-    console.log(this.Duration);
     
   }
 }
