@@ -14,7 +14,7 @@ export class Result implements OnChanges{
   @Input() duration: number = 0;
   years: number[] = []
 
-  resultsData:[{year:number,investmentValue:number, interest:number, totalinterest:number,investmentcapital:number}]=[]
+  resultsData:{year:number,investmentValue:number, interest:number, totalinterest:number,investmentcapital:number}[]=[]
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['duration']) {
